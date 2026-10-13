@@ -3,25 +3,23 @@
   "id": "gooskers_epic_villages_compat",
   "version": "${version}",
   "name": "Goosker's Epic Villages Compat",
-  "description": "Fabric 1.20.1 compatibility for Epic Structures: Villages + Luki's Grand Capitals, with Epic/Luki/50-50 village selection and optional centerless Luki villages.",
-  "authors": [
-    "Goosker"
-  ],
+  "description": "Fabric 1.20.1 compatibility for Epic Structures: Villages 2.0.0 + Luki's Grand Capitals, with per-village Epic/Luki/50-50 selection and Mod Menu configuration.",
+  "authors": ["Goosker"],
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "com.goosker.epicvillagescompat.GooskersEpicVillagesCompat"
-    ]
+    "main": ["com.goosker.epicvillagescompat.GooskersEpicVillagesCompat"],
+    "modmenu": ["com.goosker.epicvillagescompat.CompatModMenuApi"]
   },
   "depends": {
     "fabricloader": ">=0.14.0",
     "minecraft": "~1.20.1",
     "fabric-resource-loader-v0": "*",
-    "mr_epic_structuresvillages": "*",
+    "mr_epic_structuresvillages": ">=2.0.0",
     "mr_lukis_grandcapitals": "*"
   },
   "suggests": {
+    "modmenu": "*",
     "structurify": "*"
   }
 }
